@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import {} from "module";
+import { About } from "./About";
+import { Contact } from "./Contact";
+import { Home } from "./Home";
+import { NoMatch } from "./NoMatch";
 
 class App extends Component {
   render() {
