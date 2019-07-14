@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,6 +10,7 @@ const Styles = styled.div`
     background-color: #222;
   }
 
+  a,
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #bbb
@@ -22,18 +24,26 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Code Life</Navbar.Brand>
+      <Link to="/">
+        <Navbar.Brand>Code Life</Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link>
+              <Link to="/">Home</Link>
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link>
+              <Link to="/about">About</Link>
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link>
+              <Link to="/contact">Contact</Link>
+            </Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
