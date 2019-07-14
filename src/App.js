@@ -7,11 +7,13 @@ import { Home } from "./Home";
 import { NoMatch } from "./NoMatch";
 
 import { Layout } from "./components/Layout";
+import { NavigationBar } from "./components/NavigationBar";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <NavigationBar />
         <Layout>
           <Router>
             <Switch>
