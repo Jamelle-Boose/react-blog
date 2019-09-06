@@ -2,15 +2,7 @@
 
 # Build a website with React, React-Bootstrap, React-Router and Styled-Components
 
-Create a website with React Bootstrap, Styled Components and React Router. React-Bootstrap is used to quickly style our page with their selection of prebuilt react components. Then we use styled-components to tweak some of the styles. Finally, we use react-router page navigation in our navbar.
-
-## Installation
-
-Use the package manager [NPM](https://www.npmjs.com/) to install dependencies.
-
-```bash
-npm install react-bootstrap bootstrap react-router-dom styled-components
-```
+https://wonderful-murdock-171afd.netlify.com
 
 ## Contributing
 
